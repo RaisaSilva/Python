@@ -256,7 +256,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 1\n",
     "print (list(range(0,2)))\n",
     "print (list(range(0,1)))\n",
     "print (list(range(0,0)))\n",
@@ -320,7 +320,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 2\n",
     "n = int(input(\"Escriba un numero entero mayor que 0: \"))\n",
     "\n",
     "if n>0:\n",
@@ -390,7 +390,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 3\n",
     "n1 = int(input(\"Escriba un número entero: \"))\n",
     "n2 = int(input(\"Escriba otro número entero mayor que \" + str(n1) +\": \"))\n",
     "\n",
@@ -454,7 +454,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 4\n",
     "print (\"PARES ENTRE VALORES\")\n",
     "n1 = int(input(\"Eacriba el número entero inicial: \"))\n",
     "n2 = int(input(\"Escriba el número entero final: \"))\n",
@@ -538,7 +538,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 5\n",
     "print(\"MULTIPLOS ENTRE VALORES\")\n",
     "\n",
     "n1 = int(input(\"Eacriba el número entero inicial: \"))\n",
@@ -1305,7 +1305,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 6\n",
     "n=int(input(\"Dígame cuántas palabras tiene la lista: \"))\n",
     "\n",
     "if n>0:\n",
@@ -1367,7 +1367,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 7\n",
     "np1=int(input(\"Dígame cuántas palabras tiene la lista: \"))\n",
     "lista1=[]\n",
     "\n",
@@ -1391,10 +1391,10 @@
    ]
   },
   {
-   "cell_type": "raw",
+   "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "Ejercicio 8:\n",
+    "# Ejercicio 8:\n",
     "\n",
     "Escriba un programa que permita crear una lista de palabras y que, a continuación, elimine los elementos repetidos (dejando únicamente el primero de los elementos repetido.\n",
     "\n",
@@ -1434,7 +1434,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 8\n",
     "np=int(input(\"Dígame cuántas palabras tiene la lista: \"))\n",
     "\n",
     "lista1=[]\n",
@@ -1488,111 +1488,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "# Escriba el código aqui\n",
-    "from collections import OrderedDict\n",
-    "npala=int(input(\"Dígame cuántas palabras tiene la lista: \"))\n",
-    "i=1\n",
-    "lc=[]\n",
-    "if npala > 0:\n",
-    "    while i <= npala:\n",
-    "        pala=input(f\"Dígame la palabra {i}: \")\n",
-    "        lc.append(pala)\n",
-    "        i+=1\n",
-    "    print(f\"La lista creada es: {lc}\")\n",
-    "    lcu=list(OrderedDict.fromkeys(lc).keys())\n",
-    "    npala2=int(input(\"Dígame cuántas palabras tiene la lista: \"))\n",
-    "    j=1\n",
-    "    le=[]\n",
-    "    if npala2 > 0:\n",
-    "        while j <= npala2:\n",
-    "            pala2=input(f\"Dígame la palabra {j}: \")\n",
-    "            le.append(pala2)\n",
-    "            j+=1\n",
-    "        print(f\"La lista creada es: {le}\")\n",
-    "        leu=list(OrderedDict.fromkeys(le).keys())\n",
-    "        print(leu,lcu)\n",
-    "        comunes=[]\n",
-    "        for com in lcu:\n",
-    "            if com in leu:\n",
-    "                comunes.append(com)\n",
-    "        print(\"Palabras que aparecen en las dos listas:\", comunes)\n",
-    "        soloPrimera=[]\n",
-    "        for pri in lcu:\n",
-    "            if pri not in leu:\n",
-    "                soloPrimera.append(pri)\n",
-    "        print(\"Palabras que sólo aparecen en la primera lista:\", soloPrimera)\n",
-    "        soloSegunda=[]\n",
-    "        for se in leu:\n",
-    "            if se not in lcu:\n",
-    "                soloSegunda.append(se)\n",
-    "        print(\"Palabras que sólo aparecen en la segunda lista:\", soloSegunda)\n",
-    "        todas = comunes + soloPrimera + soloSegunda\n",
-    "        print(\"Todas las palabras:\", todas)\n",
-    "    else:\n",
-    "        print(\"¡Imposible!\")\n",
-    "else:\n",
-    "    print(\"¡Imposible!\")\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "cant=int(input('Dígame cuántas palabras tiene la primera lista: '))\n",
-    "if cant<=0:\n",
-    "    print('¡Imposible!')\n",
-    "else:\n",
-    "    cont1=0\n",
-    "    lista1=[]\n",
-    "    while cont1 < cantidad1:\n",
-    "        palabra1=input('Dígame la palabra '+ str(cont1+1) +': ' )\n",
-    "        lista1.append(palabra1)\n",
-    "        cont1+=1\n",
-    "    print('La primera lista es:', lista1)\n",
-    "    \n",
-    "    cantidad2=int(input('Dígame cuántas palabras tiene la segunda lista: '))\n",
-    "    cont2=0\n",
-    "    lista2=[]\n",
-    "    while cont2 < cantidad2:\n",
-    "        palabra2=input('Dígame la palabra '+ str(cont2+1) +': ' )\n",
-    "        lista2.append(palabra2)\n",
-    "        cont2+=1\n",
-    "    print('La segunda lista es:', lista2)\n",
-    "    \n",
-    "    lista3=lista1+lista2 \n",
-    "    listasinrepetes=[]\n",
-    "    endoslistas=[]\n",
-    "    enprimera=[]\n",
-    "    ensegunda=[]\n",
-    "    \n",
-    "    for i in lista1:\n",
-    "        if i not in lista2 and i not in enprimera:\n",
-    "            enprimera.append(i)\n",
-    "        elif i not in endoslistas:\n",
-    "            endoslistas.append(i)\n",
-    "    for i in lista2:\n",
-    "        if i not in lista1 and i not in ensegunda:\n",
-    "            ensegunda.append(i)\n",
-    "    for i in lista3:\n",
-    "        if i not in listasinrepetes:\n",
-    "            listasinrepetes.append(i)\n",
-    "        \n",
-    "    \n",
-    "    print('Palabras que aparecen en las dos listas:', endoslistas)\n",
-    "    print('Palabras que sólo aparecen en la primera lista:', enprimera)\n",
-    "    print('Palabras que sólo aparecen en la segunda lista:', ensegunda)  \n",
-    "    print('Todas las palabras:', listasinrepetes)"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 163,
+   "execution_count": 172,
    "metadata": {},
    "outputs": [
     {
@@ -1600,31 +1496,25 @@
      "output_type": "stream",
      "text": [
       "Dígame cuántas palabras tiene la lista: 3\n",
-      "Dígame la 1: lola\n",
-      "Dígame la 2: liz\n",
-      "Dígame la 3: loa\n",
-      "['lola', 'liz', 'loa']\n",
+      "Dígame la 1: carmen\n",
+      "Dígame la 2: alberto\n",
+      "Dígame la 3: benito\n",
+      "['carmen', 'alberto', 'benito']\n",
       "Dígame cuántas palabras tiene la segunda lista: 4\n",
-      "Dígame la 1: ale\n",
-      "Dígame la 2: lola\n",
-      "Dígame la 3: liz\n",
-      "Dígame la 4: lol\n",
-      "['ale', 'lola', 'liz', 'lol']\n"
-     ]
-    },
-    {
-     "ename": "NameError",
-     "evalue": "name 'endoslistas' is not defined",
-     "output_type": "error",
-     "traceback": [
-      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
-      "\u001b[0;32m<ipython-input-163-ae2d53348c24>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     29\u001b[0m             \u001b[0mapareceen1\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     30\u001b[0m         \u001b[0;32melif\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mapareceenlos2\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 31\u001b[0;31m             \u001b[0mendoslistas\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mi\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     32\u001b[0m     \u001b[0;32mfor\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mnombres2\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     33\u001b[0m         \u001b[0;32mif\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0;32min\u001b[0m \u001b[0maparecenen1\u001b[0m \u001b[0;32mand\u001b[0m \u001b[0mi\u001b[0m \u001b[0;32mnot\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mapareceen2\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-      "\u001b[0;31mNameError\u001b[0m: name 'endoslistas' is not defined"
+      "Dígame la 1: benito\n",
+      "Dígame la 2: juan\n",
+      "Dígame la 3: carmen\n",
+      "Dígame la 4: carmen\n",
+      "['benito', 'juan', 'carmen', 'carmen']\n",
+      "Palabras que aparecen en las dos listas:  ['carmen', 'alberto', 'benito', 'juan']\n",
+      "Palabras que solo aparecen en la primera lista: []\n",
+      "Palabras que solo aparecen en la segunda lista: []\n",
+      "Todas las palabras: ['carmen', 'alberto', 'benito', 'juan']\n"
      ]
     }
    ],
    "source": [
+    "#Ejercicio 9\n",
     "n1=int(input(\"Dígame cuántas palabras tiene la lista: \"))\n",
     "\n",
     "if n1>0:\n",
@@ -1652,18 +1542,23 @@
     "    todo=[]\n",
     "    \n",
     "    for i in nombres1:\n",
-    "        if i in nombres1 and i not in nombres2:\n",
+    "        if not i in nombres1 and i not in nombres2:\n",
     "            apareceen1.append(i)\n",
-    "        elif i not in apareceenlos2:\n",
-    "            endoslistas.append(i)\n",
-    "    for i in nombres2:\n",
-    "        if i not in aparecenen1 and i not in apareceen2:\n",
-    "            ensegunda.append(i)\n",
+    "       # elif i not in apareceenlos2:\n",
+    "        #    apareceenlos2.append(i)\n",
+    "        elif i in nombres1 and i in nombres2:\n",
+    "            apareceenlos2.append(i)\n",
+    "    for i in lista2:\n",
+    "        if i not in lista1 and i not in apareceen2:\n",
+    "            apareceen2.append(i)\n",
     "    for i in nombres3:\n",
     "        if i not in todo:\n",
     "            todo.append(i)\n",
-    "        else:\n",
-    "            print ('Todas las palabras:', todo)\n",
+    "\n",
+    "    print ('Palabras que aparecen en las dos listas: ', todo)\n",
+    "    print ('Palabras que solo aparecen en la primera lista:', apareceen1)\n",
+    "    print ('Palabras que solo aparecen en la segunda lista:', apareceen1)\n",
+    "    print ('Todas las palabras:', todo)\n",
     "        \n",
     "    \n",
     "    \n",
@@ -1709,7 +1604,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 10\n",
     "\n",
     "n=int(input(\"Dígame cuántas palabras tiene la lista: \"))\n",
     "\n",
@@ -2467,7 +2362,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 11\n",
     "a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]\n",
     "[i for i in a if i%2 == 0]\n",
     "\n"
@@ -2502,7 +2397,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 12\n",
     "[ i**2 for i in range (11)]\n"
    ]
   },
@@ -2523,36 +2418,6 @@
     "Capital tras 3 años: 1331.00<br>\n",
     "Capital tras 4 años: 1464.10<br>\n",
     "Capital tras 5 años: 1610.51<br>"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": 74,
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stdout",
-     "output_type": "stream",
-     "text": [
-      "¿Cantidad a invertir? 2000\n",
-      "¿Interés porcentaje anual? 15\n",
-      "¿Años? 20\n",
-      "[<generator object <listcomp>.<genexpr> at 0x10e5bd750>, <generator object <listcomp>.<genexpr> at 0x10e5bd5e8>, <generator object <listcomp>.<genexpr> at 0x10e5bd840>, <generator object <listcomp>.<genexpr> at 0x10e5bd7c8>, <generator object <listcomp>.<genexpr> at 0x10e5bd8b8>, <generator object <listcomp>.<genexpr> at 0x10e5bd930>, <generator object <listcomp>.<genexpr> at 0x10e5bd9a8>, <generator object <listcomp>.<genexpr> at 0x10e5bda20>, <generator object <listcomp>.<genexpr> at 0x10e5bda98>, <generator object <listcomp>.<genexpr> at 0x10e5bdb10>, <generator object <listcomp>.<genexpr> at 0x10e5bdb88>, <generator object <listcomp>.<genexpr> at 0x10e5bdc00>, <generator object <listcomp>.<genexpr> at 0x10e5bdc78>, <generator object <listcomp>.<genexpr> at 0x10e5bdcf0>, <generator object <listcomp>.<genexpr> at 0x10e5bdd68>, <generator object <listcomp>.<genexpr> at 0x10e5bdde0>, <generator object <listcomp>.<genexpr> at 0x10e5bde58>, <generator object <listcomp>.<genexpr> at 0x10e5bded0>, <generator object <listcomp>.<genexpr> at 0x10e5bdf48>, <generator object <listcomp>.<genexpr> at 0x10e5c0048>]\n"
-     ]
-    }
-   ],
-   "source": [
-    "# Escriba el código aqui\n",
-    "\n",
-    "cant=float(input(\"¿Cantidad a invertir? \"))\n",
-    "inter=int(input(\"¿Interés porcentaje anual? \"))\n",
-    "años=int(input(\"¿Años? \"))\n",
-    "\n",
-    "res = [((cant + cant* (inter/100),aux) for i in range (aux))]\n",
-    "res +=!\n",
-    "[for j in range(años)]\n",
-    "\n",
-    "print (res)"
    ]
   },
   {
@@ -2591,6 +2456,7 @@
     }
    ],
    "source": [
+    "# Escriba el código aqui 13\n",
     "cant=float(input(\"¿Cantidad a invertir? \"))\n",
     "inter=int(input(\"¿Interés porcentaje anual? \"))\n",
     "años=int(input(\"¿Años? \"))\n",
@@ -2635,7 +2501,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 14\n",
     "n=int(input(\"Escriba un número entero mayor que cero: \"))\n",
     "acc=1\n",
     "if n>0:\n",
@@ -2686,7 +2552,7 @@
     }
    ],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 15\n",
     "n = int(input(\"Ingrese el tamaño de la atriiz cuadrada: \"))\n",
     "[[1 if i==j else 0 for j in range(n)] for i in range(n)]\n",
     "\n",
@@ -2895,20 +2761,20 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 160,
+   "execution_count": 131,
    "metadata": {},
    "outputs": [
     {
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "[[1, 2], [4, 3], [1, 5]]\n"
+      "2\n"
      ]
     }
    ],
    "source": [
     "matriz = [[1,2],[4,3],[1,5]]\n",
-    "print(matriz)"
+    "print(matriz[0][1])"
    ]
   },
   {
@@ -3068,7 +2934,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 159,
+   "execution_count": 4,
    "metadata": {},
    "outputs": [
     {
@@ -3079,18 +2945,37 @@
      ]
     },
     {
-     "ename": "TypeError",
-     "evalue": "unsupported operand type(s) for /: 'list' and 'int'",
+     "ename": "NameError",
+     "evalue": "name 'acc' is not defined",
      "output_type": "error",
      "traceback": [
       "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
-      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
-      "\u001b[0;32m<ipython-input-159-10baecb19028>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     13\u001b[0m         \u001b[0mlistaint\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mvalfila\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mj\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     14\u001b[0m         \u001b[0maux\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0maux\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mvalfila\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mj\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 15\u001b[0;31m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf\"La media de la fila {i+1} es\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0macc\u001b[0m\u001b[0;34m/\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     16\u001b[0m     \u001b[0mm\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlint\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     17\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mm\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
-      "\u001b[0;31mTypeError\u001b[0m: unsupported operand type(s) for /: 'list' and 'int'"
+      "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+      "\u001b[0;32m<ipython-input-4-2de0dbdeab24>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m\u001b[0m\n\u001b[1;32m     13\u001b[0m         \u001b[0mlistaint\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mvalfila\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mj\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     14\u001b[0m         \u001b[0maux\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0maux\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mvalfila\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0mj\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 15\u001b[0;31m     \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34mf\"La media de la fila {i+1} es\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0macc\u001b[0m\u001b[0;34m/\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     16\u001b[0m     \u001b[0mm\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mappend\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mlint\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     17\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mm\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+      "\u001b[0;31mNameError\u001b[0m: name 'acc' is not defined"
      ]
     }
    ],
-   "source": []
+   "source": [
+    "# Escriba el código aqui 16\n",
+    "m=[]\n",
+    "aux=0\n",
+    "for i in range(3):\n",
+    "    l=input(f\"Ingrese la fila {i+1}, separados por comas: \")\n",
+    "    valfila=l.split(sep=\",\")\n",
+    "    listaint=[]\n",
+    "    \n",
+    "    for  i in valfila:\n",
+    "        i=int(i)\n",
+    "        listaint.append(i)\n",
+    "    \n",
+    "    for j in range(3):\n",
+    "        listaint.append(int(valfila[j]))\n",
+    "        aux=aux+int(valfila[j])\n",
+    "    print(f\"La media de la fila {i+1} es\",acc/3)\n",
+    "    m.append(lint)\n",
+    "print(m)"
+   ]
   },
   {
    "cell_type": "markdown",
@@ -3107,7 +2992,7 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "# Escriba el código aqui\n",
+    "# Escriba el código aqui 17\n",
     "\n",
     "#primera matriz\n",
     "fil=int(input(\"Ingrese el tamaño de la fila\"))\n",
@@ -3136,7 +3021,7 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "# Escriba el código aqui\n"
+    "# Escriba el código aqui 18\n"
    ]
   },
   {
@@ -3160,7 +3045,7 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "# Escriba el código aqui\n"
+    "# Escriba el código aqui 19\n"
    ]
   },
   {
@@ -3174,11 +3059,31 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 177,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Ingrese número de columnas: 3\n",
+      "Ingrese número de filas: 3\n",
+      "matriz original [[1, 0, 1], [1, 1, 1], [1, 0, 0]]\n",
+      "Matriz modificada [[-46, -56, -46], [-34, -30, 20], [69, -68, 34]]\n"
+     ]
+    }
+   ],
    "source": [
-    "# Escriba el código aqui\n"
+    "# Escriba el código aqui 20 \n",
+    "import random\n",
+    "nc=int(input(\"Ingrese número de columnas: \"))\n",
+    "nf=int(input(\"Ingrese número de filas: \"))\n",
+    "\n",
+    "mo=[[1 if m1[j][i]>0 else 0 for j in range(nc)] for i in range(nf)]\n",
+    "print(\"matriz original\",mo)\n",
+    "\n",
+    "mm=[[random.randint(-100,100) for j in range(nc)] for i in range(nf)]\n",
+    "print(\"Matriz modificada\",mm)\n"
    ]
   },
   {
@@ -3192,9 +3097,17 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 12,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[-1, 1, 66.25, 333, 333, 1234.5]\n"
+     ]
+    }
+   ],
    "source": [
     "a = [-1, 1, 66.25, 333, 333, 1234.5]\n",
     "print(a)"
@@ -3202,9 +3115,17 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 13,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 66.25, 333, 333, 1234.5]\n"
+     ]
+    }
+   ],
    "source": [
     "del a[0]\n",
     "print(a)"
@@ -3212,9 +3133,17 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 14,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 66.25, 1234.5]\n"
+     ]
+    }
+   ],
    "source": [
     "del a[2:4]\n",
     "print(a)"
@@ -3222,9 +3151,17 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 15,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[]\n"
+     ]
+    }
+   ],
    "source": [
     "del a[:]\n",
     "print(a)"
@@ -3239,7 +3176,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 16,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -3248,11 +3185,11 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 18,
    "metadata": {},
    "outputs": [],
    "source": [
-    "type(a)"
+    "#type(a)"
    ]
   },
   {
@@ -3275,7 +3212,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 1,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -3284,9 +3221,17 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 2,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[(0, 'Juan'), (1, 'José'), (2, 'Maria')]\n"
+     ]
+    }
+   ],
    "source": [
     "enum_personas = list(enumerate(personas))\n",
     "print(enum_personas)"
@@ -3294,9 +3239,19 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 3,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Personas 0=Juan\n",
+      "Personas 1=José\n",
+      "Personas 2=Maria\n"
+     ]
+    }
+   ],
    "source": [
     "#La función enumerate puede ser útil dentro de un bucle for, \n",
     "# que veremos más adelante.\n",
@@ -3323,9 +3278,17 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 4,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[(1, 'ana'), (2, 'maria'), (3, 'josé')]\n"
+     ]
+    }
+   ],
    "source": [
     "indices=[1,2,3]\n",
     "nombres=[\"ana\",\"maria\",\"josé\"]\n",
@@ -3336,9 +3299,17 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 5,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[('ana', 14, 58), ('maria', 21, 70), ('josé', 38, 90)]\n"
+     ]
+    }
+   ],
    "source": [
     "nombres=[\"ana\",\"maria\",\"josé\"]\n",
     "edades = [14,21,38]\n",
@@ -3373,11 +3344,50 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 5,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Valor mínimo: 0\n",
+      "Valor máximo: 100\n",
+      "Intente adivinar un número entre  0  y  100\n",
+      "Escriba un número: 32\n",
+      "¡Demasiado pequeño! Inténtelo de nuevo:50\n",
+      "¡Demasiado pequeño! Inténtelo de nuevo:70\n",
+      "¡Demasiado pequeño! Inténtelo de nuevo:80\n",
+      "¡Demasiado pequeño! Inténtelo de nuevo:90\n",
+      "¡Demasiado pequeño! Inténtelo de nuevo:99\n",
+      "¡Demasiado grande! Inténtelo de nuevo:98\n",
+      "¡Demasiado grande! Inténtelo de nuevo:97\n",
+      "¡Demasiado grande! Inténtelo de nuevo:96\n",
+      "¡Demasiado grande! Inténtelo de nuevo:95\n",
+      "¡Acertó! Le ha costado 10 intentos \n"
+     ]
+    }
+   ],
    "source": [
-    "# Escriba el código aqui\n"
+    "# Escriba el código aqui 21\n",
+    "\n",
+    "import random\n",
+    "valmin = (int(input(\"Valor mínimo: \")))\n",
+    "valmax = (int(input(\"Valor máximo: \")))\n",
+    "\n",
+    "x = random.randint(valmin, valmax)\n",
+    "\n",
+    "print(\"Intente adivinar un número entre \", valmin, \" y \", valmax)\n",
+    "num = (int(input(\"Escriba un número: \")))\n",
+    "intentos = 1\n",
+    "\n",
+    "while (not num == x ):\n",
+    "    if (x < num):\n",
+    "        num = int(input(\"¡Demasiado grande! Inténtelo de nuevo:\"))\n",
+    "    else:\n",
+    "        num = int(input(\"¡Demasiado pequeño! Inténtelo de nuevo:\"))\n",
+    "    intentos += 1\n",
+    "print(\"¡Acertó! Le ha costado\", intentos, \"intentos \")"
    ]
   },
   {
@@ -3393,13 +3403,27 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 8,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "138"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
+    "# Escriba el código aqui 22\n",
     "X=[3,6,7,6]\n",
     "Y=[5,8,9,2]\n",
-    "#Consejo: use list comprehension y zip"
+    "if len(X) == len(Y):\n",
+    "    r=[X[i]*Y[i] for i in range(len(X))]\n",
+    "sum(r)\n"
    ]
   },
   {
@@ -3416,26 +3440,26 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 4,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "suma:  [[6, 4, 4], [6, 6, 13], [6, 3, 4]]\n"
+     ]
+    }
+   ],
    "source": [
-    "import string \n",
-    "abecedario= string.ascii_uppercase\n",
+    "# Escriba el código aqui 2\n",
+    "A=[[1,2,3],[4,5,6],[2,2,2]]\n",
+    "B=[[5,2,1],[2,1,7],[4,1,2]]\n",
+    "         \n",
+    "S =[[A[i][j] + B[i][j]  for j in range (len(B))] for i in range(len(A))]\n",
     "\n",
-    "n=int(input(\"Ingrese  el numero de lineas que usará\"))\n",
-    "\n",
-    "for i in range (n):\n",
-    "    l=input(\"\")\n",
-    "    lista.append(l)\n",
-    "    \n",
-    "nuevalista = ''.join(lista)\n",
-    "nuevalista.upper\n",
-    "\n",
-    "for i in range \n",
-    "\n",
-    "print (nuevalista)\n",
-    "print (abecedario)"
+    "print(\"suma: \", S)\n",
+    "#Calcule S"
    ]
   }
  ],
